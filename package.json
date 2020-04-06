@@ -1,0 +1,19 @@
+{
+  "name": "gallerywebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fara0000/First_Website.git"
+  },
+  "author": "Fakhri Imanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fara0000/First_Website/issues"
+  },
+  "homepage": "https://github.com/fara0000/First_Website#readme"
+}
