@@ -64,3 +64,22 @@ body, html {
     max-height: 200px;
     margin-bottom: 20px;
 }
+.social a {
+    font-size: 4em;
+    padding: 20px;
+}
+
+.fa-facebook {color:#3b5998}
+.fa-instagram {color: hsl(207, 34%, 48%)}
+.fa-vk {color: #00aced}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-vk:hover {
+    color: #ccc;
+}
+
+footer {
+    background-color: #3f3f3f;
+    padding-top: 50px;
+    border-top: 4px solid silver;
+    color :white;
+}
