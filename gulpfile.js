@@ -11,6 +11,7 @@ function returnJS() {
     return src('./src/js/**')
     .pipe(dest('build/js'))
 }
+
 function returnCSS() {
     return src('./src/less/**')
     .pipe(less())
@@ -23,10 +24,14 @@ function returnBootstrapCSS() {
     .pipe(dest('build/css/'))
 }
 
-
 function returnImages() {
     return src('./src/img/**')
     .pipe(dest('build/img'))
+}
+
+function returnFonts() {
+    return src('./src/fonts/**')
+    .pipe(dest('build/fonts'))
 }
 
 exports.returnHTML = returnHTML;
@@ -34,5 +39,6 @@ exports.returnCSS = returnCSS;
 exports.returnJS = returnJS;
 exports.returnBootstrapCSS = returnBootstrapCSS;
 exports.returnImages = returnImages;
-exports.default = parallel(returnHTML, returnCSS, returnBootstrapCSS, returnJS, returnImages);
+exports.returnFonts = returnFonts;
+exports.default = parallel(returnHTML, returnCSS, returnBootstrapCSS, returnJS, returnImages, returnFonts);
 
