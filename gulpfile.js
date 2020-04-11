@@ -3,30 +3,30 @@ const less = require('gulp-less');
 const minifyCSS = require('gulp-csso');
 
 function returnHTML() {
-    return src('./**/*.html')
+    return src('./src/**/*.html')
     .pipe(dest('build'))
 }
     
 function returnJS() {
-    return src('./src/index.js')
+    return src('./src/js/**')
     .pipe(dest('build/js'))
 }
 function returnCSS() {
-    return src('./less/**/*.less')
+    return src('./src/less/**')
     .pipe(less())
     .pipe(minifyCSS())
-    .pipe(dest('build/'))
+    .pipe(dest('build/css/'))
 }
 
 function returnBootstrapCSS() {
-    return src('./css/img/**')
+    return src('./src/css/**')
     .pipe(dest('build/css/'))
 }
 
 
 function returnImages() {
     return src('./src/img/**')
-    .pipe(dest('build/images'))
+    .pipe(dest('build/img'))
 }
 
 exports.returnHTML = returnHTML;
