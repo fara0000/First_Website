@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fara0000/First_Website.git"
+  },
+  "author": "Fakhri Imanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fara0000/First_Website/issues"
+  },
+  "homepage": "https://github.com/fara0000/First_Website#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gulp": "4.0.2",
+    "gulp-cli": "2.2.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
+
